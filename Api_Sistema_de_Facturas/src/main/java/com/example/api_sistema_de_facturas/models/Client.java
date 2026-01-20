@@ -16,6 +16,7 @@ public class Client {
     private String surnames;
     private String email;
     private String address;
+
     @JsonManagedReference
     @OneToMany(orphanRemoval = true, mappedBy = "client")
     private List<Invoice> invoices;
